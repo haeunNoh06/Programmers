@@ -1,13 +1,8 @@
 class Solution {
     public String solution(String s) {
-        String answer;
-        String[] arr = s.split("");
-        
-        //if ( s.length()%2 != 0 ) answer = arr[(s.length()-1) / 2];
-        //else answer = arr[s.length()/2-1]+arr[s.length()/2];
-        
-        answer = (s.length()%2 == 0 ? arr[s.length()/2-1]+arr[s.length()/2] : arr[(s.length()-1) / 2] );
-        
-        return answer;
+        String[] ch = s.split("");
+        return ( ch.length % 2 == 0 ? 
+                        ch[ch.length/2-1]+ch[ch.length/2] :
+                        ch[ch.length/2]);
     }
 }
