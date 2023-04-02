@@ -5,7 +5,6 @@ class Solution {
         int height = board[1]/2;
         
         for ( int i = 0; i < keyinput.length; i++) {
-            
             if ( keyinput[i].equals("left") && coordinate[0]-1 >= -width) {
                 coordinate[0]--;
             } else if ( keyinput[i].equals("right") && coordinate[0]+1 <= width) {
