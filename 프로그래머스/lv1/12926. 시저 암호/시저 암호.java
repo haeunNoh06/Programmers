@@ -8,8 +8,10 @@ class Solution {
                 continue;
             } 
             for ( int j = 0; j < n; j++) {
-                if ( ch+j == 'z' || ch+j == 'Z')
+                if ( ch+j == 'z' || ch+j == 'Z') {
                     ch -= 26;
+                    continue;
+                }
             }
             answer += (char)(ch+n);
         }
