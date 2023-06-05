@@ -1,7 +1,6 @@
 class Solution {
     public int[] solution(String s) {
         int[] answer = new int[s.length()];// 정답배열
-        String[] str = new String[s.length()];// 비교
         answer[0] = -1;
         for ( int i = 0; i < s.length(); i++) {
             char ch = s.charAt(i);
