@@ -1,7 +1,6 @@
 import java.util.*;
 class Solution {
     public String solution(String s) {
-        String answer = "";
         String[] arr = s.split(" ");
         int max = Integer.parseInt(arr[0]), min = Integer.parseInt(arr[0]);
         for ( int i = 1; i < arr.length; i++) {
