@@ -1,8 +1,8 @@
 import java.util.*;
 class Solution {
     public int[] solution(int k, int[] score) {
-        ArrayList<Integer> answer = new ArrayList<>(score.length);
-        ArrayList<Integer> list = new ArrayList<>(score.length);
+        ArrayList<Integer> answer = new ArrayList<>();
+        ArrayList<Integer> list = new ArrayList<>();
         
         for ( int s : score) {
             list.add(s);
