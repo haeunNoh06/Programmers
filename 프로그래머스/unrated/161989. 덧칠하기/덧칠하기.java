@@ -3,12 +3,11 @@ class Solution {
         int answer = 1;
         int start = section[0];
         for ( int item : section ) {
-            if ( start + m <= item ) {
+            if ( item >= start + m ) {
                 answer++;
                 start = item;
             }
         }
-        
         return answer;
     }
 }
