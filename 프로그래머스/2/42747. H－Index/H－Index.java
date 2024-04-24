@@ -3,6 +3,7 @@ class Solution {
     public int solution(int[] citations) {
         int answer = 0;
         int len = citations.length;
+        boolean isEnded = false;
         
         Arrays.sort(citations);
         if ( citations[len-1] == 0 ) return 0;
@@ -11,9 +12,11 @@ class Solution {
                 if ( citations[j] > answer ) {
                     if ( j == len-1-i ) answer++;// 마지막 문자까지 조건충족 시 h+1
                 } else {
+                    isEnded = true;
                     break;
                 }
             }
+            if ( isEnded ) break;
         }
         /*
         반례
