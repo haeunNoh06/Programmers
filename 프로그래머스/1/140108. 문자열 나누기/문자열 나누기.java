@@ -6,7 +6,7 @@ class Solution {
         char standard = chs[0];// 비교할 기준값 
         int xCnt = 1, notXCnt = 0;// x와 같은 수, x가 아닌 수
         String str = standard+"";// list에 저장할 문자열 저장
-        if ( chs.length == 1 ) return 1;
+        // if ( chs.length == 1 ) return 1;
         for ( int i = 1; i < chs.length; i++ ) {
             str += chs[i];// str에 현재 문자 저장 
             if ( chs[i] == standard )
